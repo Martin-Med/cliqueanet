@@ -4,6 +4,7 @@ import { Login } from './pages/Login';
 import { ForgotPassword } from './pages/ForgotPassword';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
+import { Intranet } from './pages/intranet';
 
 const App = (): JSX.Element => {
   return (
@@ -15,7 +16,6 @@ const App = (): JSX.Element => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
       </main>
 
