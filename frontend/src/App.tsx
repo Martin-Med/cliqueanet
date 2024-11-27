@@ -6,22 +6,24 @@ import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
 import { Intranet } from './pages/intranet';
 
-const App = (): JSX.Element => {
+function App(): JSX.Element {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 via-white to-purple-50">
       <Header />
-      
-      {/* Main Content */}
-      <main className="flex-1 pt-16 pb-16"> {/* pt-16 para el header, pb-16 para el footer */}
+      <main className="flex-1 pt-16 pb-16">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/intranet/*" element={<Intranet />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          // el path es el que se muestra en la URL en el navegador, y el element es el componente que se renderiza en esa ruta, 
+          // el element es interno de la ruta, ese no se pone en el url porque no se va a ver en el navegador
         </Routes>
       </main>
-
       <Footer />
     </div>
   );
 }
+
 
 export default App;
