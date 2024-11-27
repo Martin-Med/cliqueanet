@@ -65,9 +65,9 @@ export const DashboardLayout = ({ children }: { children: React.ReactNode }) => 
   };
 
   const sidebarItems: SidebarItem[] = [
-    { title: 'Empleados', icon: <Users size={20} />, path: '/dashboard/empleados' },
-    { title: 'Clientes', icon: <UserCircle size={20} />, path: '/dashboard/clientes' },
-    { title: 'Inventario', icon: <Car size={20} />, path: '/dashboard/inventario' },
+    { title: 'Empleados', icon: <Users size={20} />, path: '/intranet/employees' },
+    { title: 'Clientes', icon: <UserCircle size={20} />, path: '/intranet/customers' },
+    { title: 'Inventario', icon: <Car size={20} />, path: '/intranet/inventario' },
     { title: 'Créditos', icon: <CreditCard size={20} />, path: '/dashboard/creditos' },
     { title: 'Transacciones', icon: <ClipboardList size={20} />, path: '/dashboard/transacciones' },
   ];

@@ -2,6 +2,7 @@ import React from 'react';
 import { Car, Users, CreditCard, TrendingUp, ArrowUp, ArrowDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+
 interface StatCardProps {
   title: string;
   value: string;
